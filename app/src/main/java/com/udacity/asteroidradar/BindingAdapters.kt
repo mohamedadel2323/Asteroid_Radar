@@ -33,6 +33,7 @@ fun bindTextViewToAstronomicalUnit(textView: TextView, number: Double) {
     val context = textView.context
     textView.text = String.format(textView.context.getString(R.string.astronomical_unit_format), number)
     textView.contentDescription = R.string.astronomical_unit_format.toString()
+
 }
 
 @BindingAdapter("kmUnitText")
