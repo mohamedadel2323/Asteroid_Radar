@@ -29,7 +29,7 @@ class AsteroidsRepository(private val database: AsteroidDatabase) {
             filter.endDate
         ).asDomainModel()
     }
-    
+
 
     suspend fun refreshAsteroids(
         startDate: String,
