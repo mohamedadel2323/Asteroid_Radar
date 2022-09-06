@@ -31,20 +31,20 @@ fun bindDetailsStatusImage(imageView: ImageView, isHazardous: Boolean) {
 @BindingAdapter("astronomicalUnitText")
 fun bindTextViewToAstronomicalUnit(textView: TextView, number: Double) {
     val context = textView.context
-    textView.text = String.format(R.string.astronomical_unit_format.toString(), number)
+    textView.text = String.format(textView.context.getString(R.string.astronomical_unit_format), number)
     textView.contentDescription = R.string.astronomical_unit_format.toString()
 }
 
 @BindingAdapter("kmUnitText")
 fun bindTextViewToKmUnit(textView: TextView, number: Double) {
     val context = textView.context
-    textView.text = String.format(R.string.km_unit_format.toString(), number)
+    textView.text = String.format(textView.context.getString(R.string.km_unit_format), number)
 }
 
 @BindingAdapter("velocityText")
 fun bindTextViewToDisplayVelocity(textView: TextView, number: Double) {
     val context = textView.context
-    textView.text = String.format(R.string.km_s_unit_format.toString(), number)
+    textView.text = String.format(textView.context.getString(R.string.km_s_unit_format), number)
 }
 
 @BindingAdapter("imageUrl")
